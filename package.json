@@ -1,0 +1,27 @@
+{
+  "name": "codeboost-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev node app.js",
+    "start": "NODE_ENV=prod node app.js",
+    "test": "NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinisilvanunes/codeboost-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinisilvanunes/codeboost-api/issues"
+  },
+  "homepage": "https://github.com/vinisilvanunes/codeboost-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.14.1"
+  }
+}
