@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev node app.js",
-    "start": "NODE_ENV=prod node app.js",
-    "test": "NODE_ENV=test jest"
+    "dev": "npx cross-env NODE_ENV=dev nodemon app.js",
+    "start": "npx cross-env NODE_ENV=prod node app.js",
+    "test": "npx cross-env NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,12 @@
   },
   "homepage": "https://github.com/vinisilvanunes/codeboost-api#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
